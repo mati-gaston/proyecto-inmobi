@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Lato&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ECF9FF;
+    color: #2E3840;
+}
+
+.navBar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.bienvenida {
+    text-align: center;
+}
+
+
+/* background-position: center; */
+/* background-size: cover; */
+/* background-repeat: no-repeat; */
+
+
+
+.main-index {
+    .main-index {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        background-color: #FAEDCD;
+        align-items: center;
+    }
+
+    .about-section img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonial-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .par {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: beige;
+    color: #2E3840;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.permissions,
+.social-icons {
+    margin-right: 20px;
+}
+
+
+
+.main-nosotros .empleado {
+
+    width: 50%;
+    height: 50%;
+
+
+}
+
+
+/* Estilos para el formulario de contacto */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+.mai-amigos article img {
+
+    width: 50%;
+    height: auto;
+}
+
+.mai-amigos article {
+
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.mai-tienda article img {
+
+    width: 50%;
+    height: auto;
+
+}
+
+.mai-tienda article {
+
+    border: 1px solid black;
+    margin: 10px;
+}
