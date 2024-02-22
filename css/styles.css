@@ -36,12 +36,12 @@ header {
 
 
 .main-index {
-    .main-index {
+    
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
         padding: 20px;
-        background-color: #FAEDCD;
+        background-color:rgb(222, 209, 169);
         align-items: center;
     }
 
@@ -68,7 +68,7 @@ header {
     }
 
 
-}
+
 
 footer {
     display: flex;
