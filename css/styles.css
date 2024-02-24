@@ -29,43 +29,37 @@ header {
 }
 
 
-/* background-position: center; */
-/* background-size: cover; */
-/* background-repeat: no-repeat; */
-
-
-
 .main-index {
-    
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        padding: 20px;
-        background-color:rgb(222, 209, 169);
-        align-items: center;
-    }
 
-    .about-section img {
-        max-width: 100%;
-        height: auto;
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(222, 209, 169);
+    align-items: center;
+}
 
-    .testimonial {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+.about-section img {
+    max-width: 100%;
+    height: auto;
+}
 
-    .testimonial-content {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-    .par {
-        margin-bottom: 20px;
-    }
+.testimonial-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.par {
+    margin-bottom: 20px;
+}
 
 
 
@@ -163,14 +157,64 @@ form button[type="submit"]:hover {
 }
 
 .mai-tienda article img {
-
-    width: 50%;
+    width: 100%;
+    /* Ajusta el ancho de la imagen al contenedor del artículo */
     height: auto;
-
+    /* Mantiene la proporción de la imagen */
+    border-radius: 8px;
+    /* Añade bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Añade una sombra suave */
 }
 
+/* Estilos adicionales para los artículos */
 .mai-tienda article {
+    margin-bottom: 20px;
+    /* Espacio entre los artículos */
+    background-color: #f9f9f9;
+    /* Color de fondo para resaltar los artículos */
+    padding: 20px;
+    /* Espacio interno dentro de los artículos */
+    border-radius: 8px;
+    /* Bordes redondeados para los artículos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave debajo de los artículos */
+}
 
-    border: 1px solid black;
-    margin: 10px;
+
+
+.mai-tienda {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "venta1"
+        "venta2"
+        "venta3"
+        "venta4"
+    ;
+}
+
+.venta1 {
+    grid-area: venta1;
+}
+
+.venta2 {
+    grid-area: venta2;
+}
+
+.venta3 {
+    grid-area: venta3;
+}
+
+.venta4 {
+    grid-area: venta4;
+}
+
+@media (min-width: 768px) {
+    .mai-tienda {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "venta1 venta2"
+            "venta3 venta4";
+    }
 }
