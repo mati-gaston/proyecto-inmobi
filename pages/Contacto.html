@@ -41,7 +41,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="mai-contacto">
 
         <form action="enviar.php" method="post">
             <div>
@@ -61,23 +61,32 @@
             </div>
         </form>
 
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.088996040946!2d-58.38055779242901!3d-34.62255976715691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2d125e1c01%3A0xacd97607979875ab!2sSan%20Telmo%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1706454228261!5m2!1ses-419!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="iframe-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.088996040946!2d-58.38055779242901!3d-34.62255976715691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2d125e1c01%3A0xacd97607979875ab!2sSan%20Telmo%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1706454228261!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
 
     </main>
 
     <footer>
-
-        <div>
-
-            <h4>En nuestro pie de pagina vamos a poner los permisos y autorizaciones y en un costado los iconos de las
-                redes
-                sociales</h4>
+        <div class="footer-content">
+            <div class="permissions">
+                <h2>Permisos y autorizaciones</h2>
+                <!-- Contenido de permisos y autorizaciones -->
+            </div>
+            <div class="social-icons">
+                <!-- Iconos de redes sociales -->
+                <!-- Por ejemplo: -->
+                <a href="#"><img src="ruta-del-icono" alt="Facebook"></a>
+                <a href="#"><img src="ruta-del-icono" alt="Twitter"></a>
+                <a href="#"><img src="ruta-del-icono" alt="Instagram"></a>
+            </div>
         </div>
-
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

@@ -83,14 +83,12 @@ footer {
     margin-right: 20px;
 }
 
-.main-nosotros  {
 
-    background-color: rgb(222, 209, 169);
-    padding: 10px;
-}
+
+
 
 .main-nosotros  div img {
-    width: 100vh;
+    width: 100%;
     /* Ajusta el ancho de la imagen al contenedor del artículo */
     height: auto;
     /* Mantiene la proporción de la imagen */
@@ -111,7 +109,70 @@ footer {
     /* Bordes redondeados para los artículos */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Sombra suave debajo de los artículos */
+} 
+
+
+.main-nosotros {
+    background-color: rgb(222, 209, 169);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "nos1"
+        "nos2"
+        "nos3"
+        "nos4";
 }
+
+.nos1 {
+    grid-area: nos1;
+}
+
+.nos2 {
+    grid-area: nos2;
+}
+
+.nos3 {
+    grid-area: nos3;
+}
+
+
+.nos4 {
+    grid-area: nos4;
+    text-align: center; 
+    font-size: 18px; 
+    color: #333; 
+    margin: 0; 
+    padding: 20px; 
+}
+
+
+ 
+
+
+.mai-contacto  {
+
+    background-color: rgb(222, 209, 169);
+    padding: 10px;
+}
+
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para centrar verticalmente en la página */
+}
+
+/* Ajusta el tamaño del iframe según tus necesidades */
+.iframe-container iframe {
+    width: 600px;
+    height: 450px;
+}
+
+
+
+
 
 /* Estilos para el formulario de contacto */
 
@@ -162,60 +223,68 @@ form button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-.mai-amigos  {
-
-    background-color: rgb(222, 209, 169);
-    padding: 10px;
-}
 
 
 .mai-amigos article img {
-    width: 100vh;
-    /* Ajusta el ancho de la imagen al contenedor del artículo */
+    width: 100%;
     height: auto;
-    /* Mantiene la proporción de la imagen */
     border-radius: 8px;
-    /* Añade bordes redondeados */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Añade una sombra suave */
 }
 
 .mai-amigos article {
     margin-bottom: 20px;
-    /* Espacio entre los artículos */
     background-color: #f9f9f9;
-    /* Color de fondo para resaltar los artículos */
     padding: 20px;
-    /* Espacio interno dentro de los artículos */
     border-radius: 8px;
-    /* Bordes redondeados para los artículos */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra suave debajo de los artículos */
 }
+
+.mai-amigos {
+    background-color: rgb(222, 209, 169);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "ami1"
+        "ami2"
+        "ami3"
+        "ami4";
+}
+
+.ami1 {
+    grid-area: ami1;
+}
+
+.ami2 {
+    grid-area: ami2;
+}
+
+.ami3 {
+    grid-area: ami3;
+}
+
+.ami4 {
+    grid-area: ami4;
+}
+
+
+
 
 .mai-tienda article img {
     width: 100%;
-    /* Ajusta el ancho de la imagen al contenedor del artículo */
     height: auto;
-    /* Mantiene la proporción de la imagen */
     border-radius: 8px;
-    /* Añade bordes redondeados */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Añade una sombra suave */
 }
 
 /* Estilos adicionales para los artículos */
 .mai-tienda article {
     margin-bottom: 20px;
-    /* Espacio entre los artículos */
     background-color: rgb(222, 209, 169);
-    /* Color de fondo para resaltar los artículos */
     padding: 20px;
-    /* Espacio interno dentro de los artículos */
     border-radius: 8px;
-    /* Bordes redondeados para los artículos */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra suave debajo de los artículos */
 }
 
 
@@ -257,3 +326,20 @@ form button[type="submit"]:hover {
 
 
 
+@media (min-width: 768px) {
+    .main-nosotros {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "nos1 nos2"
+            "nos3 nos4";
+    }
+}
+
+@media (min-width: 768px) {
+    .mai-amigos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "ami1 ami2"
+            "ami3 ami4";
+    }
+}
