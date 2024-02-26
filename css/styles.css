@@ -19,7 +19,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ECF9FF; 
+    background-color:#D6E2E9;
 }
 
 
@@ -35,7 +35,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
-    background-color: rgb(222, 209, 169);
+    background-color:#F6F1EB;
     align-items: center;
 }
 
@@ -69,7 +69,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: beige;
+    background-color: #E9E1D3;
     color: #2E3840;
 }
 
@@ -113,7 +113,7 @@ footer {
 
 
 .main-nosotros {
-    background-color: rgb(222, 209, 169);
+    background-color: #F6F1EB;
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr;
@@ -152,7 +152,7 @@ footer {
 
 .mai-contacto  {
 
-    background-color: rgb(222, 209, 169);
+    background-color: #F6F1EB;
     padding: 10px;
 }
 
@@ -241,7 +241,7 @@ form button[type="submit"]:hover {
 }
 
 .mai-amigos {
-    background-color: rgb(222, 209, 169);
+    background-color: #F6F1EB;
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr;
@@ -281,7 +281,7 @@ form button[type="submit"]:hover {
 /* Estilos adicionales para los artículos */
 .mai-tienda article {
     margin-bottom: 20px;
-    background-color: rgb(222, 209, 169);
+    background-color: #F6F1EB;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
